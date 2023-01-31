@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public fuction home() {
-       return "Hello from me";
+    public function home()
+    {
+        return view('pages.home');
     }
 }
