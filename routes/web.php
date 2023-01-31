@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 
 Route::get('/', [MainController::class, 'home']);
+// si collega al maincontroller tramite 'home' e manda il contenuto in html 
