@@ -13,11 +13,13 @@ class MainController extends Controller
     {
         // richiamo il database
         $movie = Movies::all();
-        var_dump($movie);
-        die();
 
+        // richiamo i dati dal database
+        $data = [
+            'movies' => $movie
+        ];
         // richiama la pagina home.blade.php in pages dove ci sono i contenuti
-        return view('pages.home');
+        return view('pages.home', $data);
     }
 }
 

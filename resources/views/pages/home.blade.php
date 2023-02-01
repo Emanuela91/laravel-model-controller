@@ -3,5 +3,9 @@
 
 {{-- contenuto che va all'interno di main-layout, di solito in body --}}
 @section('content')
-    <div>My content</div>
+<h1>My Movies</h1>
+<div>
+    richiamo il database che viene stampato a schermo come array
+    {{$movies}}
+</div>
 @endsection
