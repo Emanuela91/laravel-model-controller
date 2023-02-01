@@ -5,7 +5,13 @@
 @section('content')
 <h1>My Movies</h1>
 <div>
-    richiamo il database che viene stampato a schermo come array
-    {{$movies}}
+    <ul>
+        {{-- faccio un foreach per prendere le singole variabili e stamparle a schermo --}}
+        @foreach ($movies as $movie)
+        <li>{{$movie['title']}}</li>            
+        @endforeach
+    </ul>
+    {{-- richiamo il database che viene stampato a schermo come array
+    {{$movies}} --}}
 </div>
 @endsection
