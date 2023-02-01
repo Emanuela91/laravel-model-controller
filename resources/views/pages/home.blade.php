@@ -8,7 +8,13 @@
     <ul>
         {{-- faccio un foreach per prendere le singole variabili e stamparle a schermo --}}
         @foreach ($movies as $movie)
-        <li>{{$movie['title']}}</li>            
+        <li>{{$movie['id']}}
+            {{$movie['title']}}, 
+            {{$movie['original_title']}},
+            {{$movie['nationality']}},
+            {{$movie['date']}},
+            {{$movie['vote']}}  
+        </li>            
         @endforeach
     </ul>
     {{-- richiamo il database che viene stampato a schermo come array
